@@ -1,0 +1,44 @@
+[core]
+	editor = vim
+[user]
+	name = Alberto Caamaño Souto
+	email = alberto.csouto@nomasystems.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[push]
+	default = simple
+[http]
+	sslVerify = true
+[alias]
+  st = status
+  str = status-recursive
+  ci = commit
+  cir = commit-recursive
+  co = checkout
+  cor = checkout-recursive
+  br = branch
+  brr = branch-recursive
+  bnr = make-command-recursive-for-submodules 'git rev-parse --abbrev-ref HEAD'
+  logstat = log --stat
+  pullr = pull-recursive
+  pushr = push-recursive
+  tree = log --oneline --graph --decorate --all
+	sup = submodule update --recursive --init
+	cloner = clone --recursive
+[status]
+	submoduleSummary = true
+[diff]
+	submodule = log
+	tool = opendiff
+[merge]
+	tool = opendiff
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pull]
+	rebase = false

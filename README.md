@@ -1,2 +1,3 @@
-# -my-dot-files
-My dot files
+# My dot files
+
+My personal preferences for `vim`, `zsh` and `git`.
